@@ -1,14 +1,14 @@
-<p>{{titulo}}</p>
+<p>{{ titulo }}</p>
 
-<br>
-
-Nome: <input [(ngModel)]="usuario.nome"><br>
-CPF: <input [(ngModel)]="usuario.cpf"><br>
-Idade: <input [(ngModel)]="usuario.idade"><br>
+<br />
+Aluno: <input [(ngModel)]="usuario.aluno" /><br />
+Nome: <input [(ngModel)]="usuario.nome" /><br />
+CPF: <input [(ngModel)]="usuario.cpf" /><br />
+Idade: <input [(ngModel)]="usuario.idade" /><br />
 <button (click)="inserirUsuario()">Enviar</button>
 
-<br>
+<br />
 
 <ul>
-  <li *ngFor="let usuario of usuarios">{{usuario.nome}}</li>
+  <li *ngFor="let usuario of usuarios">{{ usuario.aluno }}</li>
 </ul>
